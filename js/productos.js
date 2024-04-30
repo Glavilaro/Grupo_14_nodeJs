@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function ()
 function actualizarPagina()
 {
     const urlParams = new URLSearchParams(window.location.search);
-    const seccion   = urlParams.size > 0 ? urlParams.keys().next().value : "default";
+    const seccion   = urlParams.size > 0 ? urlParams.keys().next().value : "hombres";
     if(seccion === 'mujeres')
     {
-        document.querySelector('.categoria').innerHTML = 'Mujeres <p id="productos-cant"></p>';
+        document.querySelector('.categoria').innerHTML = 'Mujeres';
     }
     else
     {
-        document.querySelector('.categoria').innerHTML = 'Hombres <p id="productos-cant"></p>';
+        document.querySelector('.categoria').innerHTML = 'Hombres';
     }
     return seccion;
 }

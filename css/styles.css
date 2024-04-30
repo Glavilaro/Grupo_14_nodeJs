@@ -115,7 +115,7 @@ body {
 .categoria {
     font-size: 2rem;
     text-transform: uppercase;
-    line-height: 2.3rem;
+    line-height: 2.8rem;
     margin-left: 20px;
 }
 
@@ -131,7 +131,7 @@ body {
     text-transform: lowercase;
 }
 #productos-cant::before {
-    content: '(';
+    content: ' (';
 }
 #productos-cant::after {
     content: ' RESULTADOS)';
@@ -295,7 +295,7 @@ body {
         font-size: 1.3rem;
     }
 
-    #productos-cant {
+    .categoria, #productos-cant {
         display: inline;
     }
 
@@ -315,7 +315,7 @@ body {
         font-size: 1rem;
     }
 
-    #productos-cant {
+    .categoria, #productos-cant {
         display: inline;
     }
 
@@ -335,9 +335,12 @@ body {
         font-size: .8rem;
     }
 
-    #productos-cant {
+    .categoria, #productos-cant {
         display: block;
-        margin-top: -15px;
+    }
+
+    #productos-cant {
+        margin-left: 20px;
     }
 
     .categoria-desc {

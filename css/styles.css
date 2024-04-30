@@ -1,0 +1,346 @@
+:root {
+    --background-color: white;   
+    --footer-background-color: rgb(229, 224, 206);
+    --carrusel-background-color: rgb(229, 224, 206);
+}
+   
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Figtree", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/************************************/
+/***** HEADER CARRUSEL Y NAVBAR *****/
+/************************************/
+#header-container {
+    width: 100%;
+    top: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.header-carrusel {
+    width: 100%;
+    text-align: center;
+    background-color: var(--carrusel-background-color);
+}
+
+.header-carrusel-text {
+    display: none; /* Oculta todos los textos por defecto */
+    color: darkred;
+    font-weight: bold;
+    justify-content: center;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.header-carrusel-text:first-child {
+    display: block; /* Muestra el primer texto al principio */
+}
+
+.header-img {
+    width: 80px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 1920px;
+    width: calc(100% - 38px);
+    margin: 5px auto 20px auto;
+    background-image: none;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.nav-container:hover {
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+*/
+
+.nav-menu {
+    /*list-style: none;*/
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    display: inline-block;
+    /*text-shadow: 4px 6px 5px grey;*/
+    font-weight: bold;
+    font-family: "Figtree", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-item:hover:not(.nav-item-active) {
+    text-decoration-line: underline;
+}
+
+.nav-item-active > a {
+    cursor: default;
+    text-shadow: .3em .4em .2em grey;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: black;
+}
+
+/**************************************/
+/***** Pagina catalogo de prendas *****/
+/**************************************/
+.nombre-tienda {
+    text-shadow: 4px 6px 5px grey;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin-left: 20px;
+}
+
+.categoria {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2.3rem;
+    margin-left: 20px;
+}
+
+.categoria-desc {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+  
+#productos-cant {
+    font-size: 1rem;
+    color: grey;
+    text-shadow: none;
+    text-transform: lowercase;
+}
+#productos-cant::before {
+    content: '(';
+}
+#productos-cant::after {
+    content: ' RESULTADOS)';
+}
+
+/*********************/
+/***** Productos *****/
+/*********************/
+#productos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1; /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 0 7%;
+}
+
+.producto {
+    width: 300px; /* Tamaño fijo para el contenedor */
+    height: auto; /* Altura ajustable */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative; /* Para posicionar las imágenes */
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+.producto h2 {
+    font-size: 18px;
+}
+
+.producto p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.producto-imagen {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block;
+}
+
+.producto-imagen-hover {
+    display: none;
+}
+
+.producto-datos {
+    position: absolute; /* Posicionamiento absoluto para superponer los datos */
+    bottom: 0; /* Ajusta la posición inferior */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para los datos */
+    width: 100%; /* Ancho completo */
+    padding: 5px;
+    transition: opacity 0.3s; /* Transición suave para la aparición de los datos */
+}
+
+.cuadradito {
+    border: 1px solid black;
+    width: 1em; /* Quiero que tenga el tamaño de una letra */
+    height: 1em; 
+    display: inline-block;
+}
+
+.producto-colores {
+    display: flex;
+    align-items: center;
+}
+
+.producto-nuevo {
+  background-color:darkviolet;
+  color: white;
+  padding: 7px 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.oferta {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.texto-tachado {
+  text-decoration: line-through; /* Tacha el texto */
+  text-decoration-style: solid;
+}
+
+.producto-precio-oferta {
+  color: red;
+  font-weight: bold;
+}
+
+/********************/
+/***** Whatsapp *****/
+/********************/
+.whatsapp {
+  display: flex;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+/******************/
+/***** Footer *****/
+/******************/
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-background-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+}
+
+.footer-div-central {
+    margin: 0 10px;
+}
+
+.footer-text {
+    color: darkred;
+}
+
+.footer-redes {
+    margin-left: 2em;
+}
+
+.footer-redes > a > i {
+    color: darkred;
+}
+
+/**********************************/
+/***** Estilos para pantallas *****/
+/**********************************/
+/* Estilos para pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+    .header-img {
+        margin-right: 100px;
+    }
+
+    .nav-item {
+        margin-left: 150px;
+        font-size: 1.3rem;
+    }
+
+    #productos-cant {
+        display: inline;
+    }
+
+    .categoria-desc {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para tablet en orientación horizontal */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-img {
+        margin-right: 40px;
+    }
+
+    .nav-item {
+        margin-left: 40px;
+        font-size: 1rem;
+    }
+
+    #productos-cant {
+        display: inline;
+    }
+
+    .categoria-desc {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media screen and (max-width: 767px) {
+    .header-img {
+        display: none;
+    }
+
+    .nav-item {
+        margin-left: 12px;
+        font-size: .8rem;
+    }
+
+    #productos-cant {
+        display: block;
+        margin-top: -15px;
+    }
+
+    .categoria-desc {
+        font-size: .8rem;
+    }
+}

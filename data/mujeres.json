@@ -1,0 +1,132 @@
+[
+    {
+        "id": 12,
+        "nombre": "Buzo jogger tejido",
+        "precio": 220000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_12_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_12_secundaria.avif",
+        "colores": ["#D0D5E9", "blue", "red", "#1D3833"],
+        "novedad": false
+    },
+    {
+        "id": 13,
+        "nombre": "Buzo con capucha",
+        "precio": 180000,
+        "precioOferta": 160000,
+        "imagenPrincipal": "./img/mujeres/mujeres_13_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_13_secundaria.avif",
+        "colores": ["#D7DBE6", "blue", "black", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 14,
+        "nombre": "Buzo estampado en espalda",
+        "precio": 155000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_14_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_14_secundaria.avif",
+        "colores": ["white", "#007004"],
+        "novedad": false
+    },
+    {
+        "id": 15,
+        "nombre": "Campera acolchada",
+        "precio": 580000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_15_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_15_secundaria.avif",
+        "colores": ["red", "blue", "black", "greenyellow"],
+        "novedad": true
+    },
+    {
+        "id": 16,
+        "nombre": "Vestido slim fit Jacquard",
+        "precio": 210000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_16_principal.webp",
+        "imagenSecundaria": "./img/mujeres/mujeres_16_secundaria.avif",
+        "colores": ["#061A45", "#182246", "#EAE5DD"],
+        "novedad": false
+    },
+    {
+        "id": 17,
+        "nombre": "Remera en tejido de punto",
+        "precio": 100000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_17_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_17_secundaria.avif",
+        "colores": ["#2E2B41", "#E9EAE5", "#778147", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 18,
+        "nombre": "Pantalon de vestir",
+        "precio": 165000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_18_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_18_secundaria.avif",
+        "colores": ["red", "blue", "black", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 19,
+        "nombre": "Short de tenis con elástico",
+        "precio": 130000,
+        "precioOferta": 100000,
+        "imagenPrincipal": "./img/mujeres/mujeres_19_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_19_secundaria.avif",
+        "colores": ["#F0E6D8", "#DEC9AF", "pink", "orange"],
+        "novedad": false
+    },
+    {
+        "id": 20,
+        "nombre": "Polo slim fit",
+        "precio": 140000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_20_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_20_secundaria.avif",
+        "colores": ["#F0EFEB", "#CACCDA", "greenyellow", "pink"],
+        "novedad": true
+    },
+    {
+        "id": 21,
+        "nombre": "Buzo con cuello polo",
+        "precio": 220000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_21_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_21_secundaria.avif",
+        "colores": ["red", "palevioletred", "#EECAC6", "black"],
+        "novedad": false
+    },
+    {
+        "id": 22,
+        "nombre": "Camiseta relaxed fit",
+        "precio": 100000,
+        "precioOferta": 75000,
+        "imagenPrincipal": "./img/mujeres/mujeres_22_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_22_secundaria.avif",
+        "colores": ["#C8D3E5", "pink", "palevioletred"],
+        "novedad": false
+    },
+    {
+        "id": 23,
+        "nombre": "Top corto deportivo ultra-dry",
+        "precio": 85000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_23_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_23_secundaria.avif",
+        "colores": ["#E3B5D1", "pink", "orange", "palevioletred"],
+        "novedad": false
+    },
+    {
+        "id": 24,
+        "nombre": "Jean",
+        "precio": 140000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/mujeres/mujeres_24_principal.avif",
+        "imagenSecundaria": "./img/mujeres/mujeres_24_secundaria.avif",
+        "colores": ["#162029", "darkblue", "black"],
+        "novedad": true
+    }
+]

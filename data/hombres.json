@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "nombre": "Polo Marl",
+        "precio": 120000,
+        "precioOferta": 90000,
+        "imagenPrincipal": "./img/hombres/hombres_1_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_1_secundaria.avif",
+        "colores": ["grey", "blue", "red", "black"],
+        "novedad": false
+    },
+    {
+        "id": 2,
+        "nombre": "Sweater en algodón orgánico",
+        "precio": 170000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_2_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_2_secundaria.avif",
+        "colores": ["darkblue", "darkgreen", "black"],
+        "novedad": true
+    },
+    {
+        "id": 3,
+        "nombre": "Buzo clásico con capucha",
+        "precio": 100000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_3_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_3_secundaria.avif",
+        "colores": ["lightskyblue", "blue", "greenyellow", "white"],
+        "novedad": false
+    },
+    {
+        "id": 4,
+        "nombre": "Camisa a cuadros classic fit",
+        "precio": 165000,
+        "precioOferta": 135000,
+        "imagenPrincipal": "./img/hombres/hombres_4_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_4_secundaria.jpg",
+        "colores": ["red", "blue", "black", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 5,
+        "nombre": "Remera algodón",
+        "precio": 85000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_5_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_5_secundaria.avif",
+        "colores": ["white", "lightskyblue", "darksalmon", "black", "red"],
+        "novedad": false
+    },
+    {
+        "id": 6,
+        "nombre": "Pantalón largo impermeable",
+        "precio": 220000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_6_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_6_secundaria.avif",
+        "colores": ["black", "darkslategrey", "grey", "beige"],
+        "novedad": false
+    },
+    {
+        "id": 7,
+        "nombre": "Remera algodón fit",
+        "precio": 85000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_7_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_7_secundaria.avif",
+        "colores": ["black", "blue", "red", "white", "darkgoldenrod"],
+        "novedad": false
+    },
+    {
+        "id": 8,
+        "nombre": "Campera corta chándal",
+        "precio": 390000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_8_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_8_secundaria.avif",
+        "colores": ["red", "blue", "black", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 9,
+        "nombre": "Campera bomber acolchada",
+        "precio": 360000,
+        "precioOferta": 310000,
+        "imagenPrincipal": "./img/hombres/hombres_9_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_9_secundaria.avif",
+        "colores": ["darkblue", "darkgreen", "black", "darkgoldenrod"],
+        "novedad": false
+    },
+    {
+        "id": 10,
+        "nombre": "Camisa clásica de algodón",
+        "precio": 155000,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_10_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_10_secundaria.avif",
+        "colores": ["red", "blue", "black", "greenyellow"],
+        "novedad": false
+    },
+    {
+        "id": 11,
+        "nombre": "Campera jogger",
+        "precio": 0,
+        "precioOferta": 0,
+        "imagenPrincipal": "./img/hombres/hombres_11_principal.avif",
+        "imagenSecundaria": "./img/hombres/hombres_11_secundaria.avif",
+        "colores": ["darkblue", "red", "black", "white"],
+        "novedad": true
+    }
+]

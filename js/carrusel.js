@@ -16,7 +16,7 @@ function mostrarPromos(promos)
 
     promos.forEach(promo => {
         addPromo(container, promo, idx++, 'animate__bounceInLeft');
-        //addPromo(container, promo, idx++, 'animate__fadeOutRightBig');
+        addPromo(container, promo, idx++, 'animate__fadeOutRightBig');
     });
     textos = document.querySelectorAll('.header-carrusel-text');
 }
@@ -34,14 +34,23 @@ function addPromo(container, promo, idx, animate)
     container.appendChild(promoElement);
 }
 
+function mostrarProximaPromo()
+{
+    textos[index].style.display = 'none';   // Oculto el texto actual
+    index = (index + 1) % textos.length;    // Obtengo el indice al proximo texto
+    textos[index].style.display = 'block';  // Muestro el proximo texto
+}
+
 setInterval
 (
     function() 
     {
-        textos[index].style.display = 'none';   // Oculto el texto actual
-        index = (index + 1) % textos.length;    // Obtengo el indice al proximo texto
-        textos[index].style.display = 'block';  // Muestro el proximo texto
+        mostrarProximaPromo();
+
+        if(index % 2 !== 0)
+        {
+            setTimeout(() => mostrarProximaPromo(), 300);
+        }
     },
-    4000 
-    //(index % 2 == 0 ? 4000 : 0)
+    5500 
 ); 

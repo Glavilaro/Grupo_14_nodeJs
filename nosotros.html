@@ -14,8 +14,9 @@
     <meta name="keywords" lang="en" content="Cuervo indumentaria, Buenos Aires, polo shirts, t-shirts, pants, dresses, coats, urban, casual, large size">
     
     <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster|Lemon' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div id="header-container">
@@ -40,24 +41,65 @@
         </ul>
     </nav>
 
-    <h1 class="nombre-tienda">CUERVO INDUMENTARIA</h1>
-    <h2 class="categoria">Hombres </h2><p id="productos-cant"></p>
-    <!--<h3 class="categoria-desc">Noventa años después de la invención del polo, descubre 5 modelos de edición especial. Para estilos versátiles que van más allá de los límites.​</h3>-->
-
-    <div id="productos-container" class="productos-area">
+    <h1 class="nombre-contacto">Acerca de Cuervo Indumentaria</h1>
+    <div class="acercaNosotros">
+        <p> Somos una empresa dedicada al diseño y fabricacion de ropa para hombres y mujeres, fundada desde 2003 y seguiendo las tendencias de modas Europeas y Americas</p>
+        <br>
+        <p>Poseemos un ambio mercadado de indumentaria para las 4 estaciones del año.</p>
+        <br>
+        <p>Exportamos a mas de 20 paises y nuestros cliente confian en nostros en la calidad de las prendas y el diseño empleado. </p>
     </div>
-    <template id="producto-template">
-        <div class="producto"> 
-            <img class="producto-imagen principal">
-            <img class="producto-imagen-hover secundaria">
-            <div class="producto-datos">
-                <h2 class="producto-nombre"></h2>
-                <p class="producto-precio"></p>
-                <p class="producto-precio-oferta"></p>
-                <p class="producto-colores"></p>
+
+    <h1 class="nombre-contacto">Donde nos encontramos?</h1>
+    <div class="containerMaps">
+        <div class="mapsBox">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9920002348167!2d-58.40484292882829!3d-34.60456608490115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaed3a88b2b1%3A0xf6a4a938d77aa936!2sAv.%20Corrientes%202635%2C%20C1046AAE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714798012014!5m2!1ses!2sar" 
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <h1 class="nombre-contacto">Nuestro Staff</h1>
+
+
+        <div id="containerLine">
+        <div id="userContainer">
+            <div id="photo"><img src="./photos/goku.JPG" alt=""></div>
+            <div id="datos">
+                <h3>Full stack - Code a Code</h3>
+                <hr>
+                <label class="labelStaff"><b>Nombre:</b> Raul Medina</label>
+                <label class="labelStaff"><b>Celular :</b> 11-23655317</label>
+                <label class="labelStaff"><b>Email:</b> raul@medina.net.ar</label>
             </div>
         </div>
-    </template>
+
+
+        <div id="userContainer">
+            <div id="photo"><img src="./photos/pony.JPG" alt=""></div>
+            <div id="datos">
+                <h3>Full stack - Code a Code</h3>
+                <hr>
+                <label class="labelStaff"><b>Nombre:</b> Gladys Vilaro </label>
+                <label class="labelStaff"><b>Celular :</b> 11 63652487</label>
+                <label class="labelStaff"><b>Email:</b> vilarogladys1989@gmail.com </label>
+            </div>
+        </div>
+
+        <div id="userContainer">
+            <div id="photo"><img src="./photos/donalp.JPG" alt=""></div>
+            <div id="datos">
+                <h3>Full stack - Code a Code</h3>
+                <hr>
+                <label class="labelStaff"><b>Nombre:</b> Jose luis Claros</label>
+                <label class="labelStaff"><b>Celular :</b> 11-69236487</label>
+                <label class="labelStaff"><b>Email:</b> claros.vilca@gmail.com</label>
+            </div>
+        </div>
+
+        </div>
+
+
+
 
     <a href="https://api.whatsapp.com/send?phone=5491141995259" class="whatsapp" target="_blank">
         <img src="./img/redes/whatsapp.svg" alt="Enviar mensaje por whatsapp">

@@ -40,9 +40,9 @@ function mostrarProductos(productos)
         const imagenSecundaria = productoElement.querySelector('.producto-imagen-hover.secundaria');
         
         imagenPrincipal.src  = producto.imagenPrincipal;
-        imagenPrincipal.alt  = producto.nombre;
+        imagenPrincipal.alt  = 'Imagen de: ' + producto.nombre;
         imagenSecundaria.src = producto.imagenSecundaria;
-        imagenSecundaria.alt = producto.nombre + ', imagen secundaria';
+        imagenSecundaria.alt = 'Imagen secundaria de: ' + producto.nombre;
 
         productoElement.querySelector('.producto-nombre').textContent = producto.nombre;
 

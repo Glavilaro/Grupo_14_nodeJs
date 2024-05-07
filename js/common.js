@@ -1,3 +1,4 @@
+/***** Agrego la clase para marcar la pagina activa *****/
 document.addEventListener('DOMContentLoaded', function () 
 {
     const currentURL = window.location.href;

@@ -1,4 +1,5 @@
-# Trabajo práctico Codo a Codo - Node.JS - Curso 24122 - Grupo 14
+# Trabajo práctico Codo a Codo
+# Node.JS - Curso 24122 - Grupo 14
 
 ## Integrantes:
 - Gladys Vilaro (vilarogladys1989@gmail.com)

@@ -29,7 +29,7 @@ function addPromo(container, promo, idx, animate)
     const div = promoElement.querySelector('.header-carrusel-text');
     div.classList.add(animate);
     if(idx > 0)
-        div.style.display = 'none';
+        div.style.display = 'none'; // Oculto todos menos el primero
 
     container.appendChild(promoElement);
 }

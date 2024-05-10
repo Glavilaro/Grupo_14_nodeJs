@@ -29,7 +29,7 @@ function actualizarPagina()
 
 function mostrarProductos(productos) 
 {
-    document.getElementById('productos-cant').innerHTML = productos.length.toString();
+    document.getElementById('productos-cant').textContent = productos.length.toString();
 
     const container = document.getElementById('productos-container');
 

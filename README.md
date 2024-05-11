@@ -13,7 +13,7 @@
 [Repositorio en GitHub](https://github.com/Glavilaro/Grupo_14_nodeJs)
 
 ## Versión navegable del sitio web:
-[Visita nuestra versión navegable](https://grupo14.netlify.app/){:target="_blank"}
+[Visita nuestra versión navegable](https://grupo14.netlify.app/{:target="_blank"})
 
 ## Utilizamos:
 - Biblioteca de animaciones: animate.style (animate.css).

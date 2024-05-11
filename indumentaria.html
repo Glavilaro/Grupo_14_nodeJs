@@ -18,36 +18,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div id="header-container">
-    </div>
-    <template id="header-template">
-        <div class="header-carrusel">
-            <div class="header-carrusel-text animate__animated">
-                <p class="header-text"></p>
-            </div>
+    <header>
+        <div id="header-container">
         </div>
-    </template>
+        <template id="header-template">
+            <div class="header-carrusel">
+                <div class="header-carrusel-text animate__animated">
+                    <p class="header-text"></p>
+                </div>
+            </div>
+        </template>
 
-    <nav class="nav-container">
-        <img class="header-img" src="./img/LogoCuervoIndumentaria.png" alt="Logo de Cuervo indumentaria">
+        <nav class="nav-container">
+            <img class="header-img" src="./img/LogoCuervoIndumentaria.png" alt="Logo de Cuervo indumentaria">
 
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="./index.html">Inicio</a></li>
-            <li class="nav-item"><a href="./indumentaria.html?hombres">Hombres</a></li>
-            <li class="nav-item"><a href="./indumentaria.html?mujeres">Mujeres</a></li>
-            <li class="nav-item"><a href="./contactos.html">Contacto</a></li>
-            <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a href="./indumentaria.html?hombres">Hombres</a></li>
+                <li class="nav-item"><a href="./indumentaria.html?mujeres">Mujeres</a></li>
+                <li class="nav-item"><a href="./contactos.html">Contacto</a></li>
+                <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <h1 class="titulo-principal">CUERVO INDUMENTARIA</h1>
     <h2 class="categoria">Hombres </h2><p id="productos-cant"></p>
     <!--<h3 class="categoria-desc">Noventa años después de la invención del polo, descubre 5 modelos de edición especial. Para estilos versátiles que van más allá de los límites.​</h3>-->
 
-    <div id="productos-container" class="productos-area">
-    </div>
+    <main id="productos-container" class="productos-area">
+    </main>
     <template id="producto-template">
-        <div class="producto"> 
+        <article class="producto"> 
             <img class="producto-imagen principal">
             <img class="producto-imagen-hover secundaria">
             <div class="producto-datos">
@@ -56,14 +58,14 @@
                 <p class="producto-precio-oferta"></p>
                 <p class="producto-colores"></p>
             </div>
-        </div>
+        </article>
     </template>
 
     <a href="https://api.whatsapp.com/send?phone=5491141995259" class="whatsapp" target="_blank">
         <img src="./img/redes/whatsapp.svg" alt="Enviar mensaje por whatsapp">
     </a>
 
-    <div class="footer footer-text">
+    <footer class="footer footer-text">
         <div class="footer-redes">
             <a href="http://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -78,30 +80,10 @@
         <div class="footer-div-central">
             <strong>Node.JS - Curso 24122 - Grupo 14</strong>
         </div>
-    </div>
-
-    <!--
-    <div class="footer footer-text">
-        <div>
-            <strong>Derechos reservados &copy; 2024 - Codo a Codo</strong>
-        </div>
-    
-        <div class="footer-div-central">
-            <strong>Node.JS - Curso 24122 - Grupo 14</strong>
-        </div>
-        
-        <div class="footer-redes">
-            <a href="http://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="http://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="http://YouTube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-    </div>
-    -->
+    </footer>
 
     <script async src="https://kit.fontawesome.com/0c98de083e.js" crossorigin="anonymous"></script>
-    <script type="module" src="./js/common.js"></script>
+    <script type="module" src="./js/indumentaria.js"></script>
     <script type="module" src="./js/carrusel.js"></script>
     <script type="module" src="./js/productos.js"></script>
 </body>

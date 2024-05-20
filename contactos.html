@@ -48,11 +48,11 @@
         <div id='formulario'>
             
 
-            <form class="row needs-validation" novalidate>
+            <form class="row needs-validation"  id="formContacto" novalidate>
                 <div class="input-padding position-relative">
                     <label class="labelHead" for="nombreid" >Nombre y Apellido:</label>
                     <input type="text" class="form-control" id="nombreid" required>
-                    <div class="invalid-tooltip">
+                    <div class="invalid-tooltip" id="nombreError">
                         Es necesario escribir su nombre
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <label class="labelHead" for="emailid" >Email:</label>
                     <input type="email" class="form-control" id="emailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     
-                    <div class="invalid-tooltip">
+                    <div class="invalid-tooltip" id="emailError">
                         Es necesario su email
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                 <div class="input-padding position-relative">
                     <label class="labelHead" for="telefonoid" >Telefono de contacto:</label>
                     <input type="text" class="form-control" id="telefonoid" required>
-                    <div class="invalid-tooltip">
+                    <div class="invalid-tooltip" id="telefonoError">
                         Es necesario escribir su numero de contacto
                     </div>
                 </div>
@@ -83,38 +83,39 @@
                 </div>
 
                 <div class="position-relative">
-                    <label class="labelHead" for="tipoid" >Tipo de consulta:</label>
+                    <label class="labelHead" for="consultaid">Tipo de consulta:</label>
                     
-                    <select name="consulta" class="opciones form-select" required>
+                    <select name="consulta" class="opciones form-select" id="consultaid" required>
                         <option value="">Elija una opcion</option>
                         <option value="value1">Precio de ropa por mayor</option>
                         <option value="value2" >Metodos de envio</option>
                         <option value="value3">Medios de pago electronico</option>
                         <option value="value3">Otras consultas</option>
                       </select>
-                      <div class="invalid-tooltip">Debe seleccionar alguna opcion</div>
+                      <div class="invalid-tooltip" id="consultaError">Debe seleccionar alguna opcion</div>
                 </div>
 
                 <div class="input-padding">
                     <label class="labelHead" >Como lo contactamos:</label>
+                    <!--<input type="hidden" id="radioid">-->
                     
                     <div class="position-relative">
-                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                        <input type="radio" class="form-check-input medios" id="validationFormCheck2" name="radio-stacked" required>
                         <label class="checkBox form-check-label" for="validationFormCheck2">Por email</label>
             
-                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <input type="radio" class="form-check-input medios" id="validationFormCheck3" name="radio-stacked" required>
                         <label class="checkBox form-check-label" for="validationFormCheck3">Por telefono</label>
 
-                        <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+                        <input type="radio" class="form-check-input medios" id="validationFormCheck4" name="radio-stacked" required>
                         <label class="checkBox form-check-label" for="validationFormCheck4">Por whatsapp</label>
-                        <div class="invalid-tooltip">Debe marcar alguna opcion</div>
+                        <div class="invalid-tooltip" id="mediosError">Debe marcar alguna opcion</div>
                       </div>
                 </div>
 
                 <div class="input-padding position-relative">
-                    <label class="labelHead"  >Adjuntar Documentacion:</label>
+                    <label class="labelHead" for="fileid">Adjuntar Documentacion:</label>
                     
-                    <input type="file" class="opciones form-control"  required>
+                    <input type="file" class="opciones form-control" id="fileid" required>
                     <div class="invalid-tooltip">
                         Seleccione el documento que enviara
                     </div>
@@ -123,7 +124,7 @@
                 <div class="input-padding position-relative">
                     <label class="labelHead" for="comentarioid" >Comentario:</label>
                     <textarea class="form-control" id="comentarioid" required></textarea>
-                    <div class="invalid-tooltip">
+                    <div class="invalid-tooltip" id="comentarioError">
                         Debe escribir un comentario
                     </div>
                 </div>
@@ -162,10 +163,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="module" src="./js/common.js"></script>
     <script type="module" src="./js/carrusel.js"></script>
-    <script type="module" src="./js/productos.js"></script>
+    <!--<script type="module" src="./js/productos.js"></script>-->
+    <script type="module" src="./js/app.js"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
+       /* (() => {
         'use strict'
 
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -182,7 +184,7 @@
             form.classList.add('was-validated')
             }, false)
         })
-        })()
+        })() */
     </script>
 
 </body>

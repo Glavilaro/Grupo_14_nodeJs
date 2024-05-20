@@ -1,5 +1,7 @@
 /***** Estilos para nosotros.html *****/
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Sedan+SC&display=swap');
+
 .nombre-contacto {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 0px #000, 0px 0px 2px #222;
@@ -42,7 +44,13 @@
     border: 0px;
 }
 .acercaNosotros p {
-    font-family: Lobster;
+    /*font-family: Lobster;*/
+
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
     font-size: 22px;
     letter-spacing: 2px;
     width: 90%;

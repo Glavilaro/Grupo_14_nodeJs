@@ -17,5 +17,8 @@
 
 ## Utilizamos:
 - Biblioteca de animaciones: animate.style (animate.css).
-- FontAwesome para obtner iconos.
+- FontAwesome para obtener iconos.
 - Bootstrap para el formulario de contacto.
+- Google Fonts:
+    - Poetsen One, para el nombre del comercio
+    - Radio Canada Big, para acerca de nosotros

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Node.JS - Curso 24122 - Grupo 14">
+    <meta name="copyright" content="&copy; 2024 Codo a Codo">
+    <meta name="description"
+        content="Descubr&iacute; la colecci&oacute;n de indumentaria para hombres y mujeres en distintos tejidos y colores. &iexcl;Encontr&aacute; lo que busc&aacute;s!">
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">    
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/actualizarSuscripcion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Cancelar suscripción</title>
+</head>
+<body>
+    <div class="content">
+        <a href="./index.html" style="text-decoration: none;">
+            <div class="titulo-principal" style="margin-left: 1rem; margin-right: 1rem; margin-top: 1rem;">
+                <h1>CUERVO INDUMENTARIA</h1>
+            </div>
+        </a>
+        
+        <h1 class="title">Actualizar mi suscripción</h1>
+        
+        <p id="email" style="text-align: center;"></p>
+
+        <div class="main-div" style="margin-top: 0.5rem;">
+            <label class="labels"><input type="radio" name="subscription" value="4">&nbsp;Recibir promociones y novedades</label>
+            <label class="labels"><input type="radio" name="subscription" value="1">&nbsp;Solo recibir promociones</label>
+            <label class="labels"><input type="radio" name="subscription" value="2">&nbsp;Solo recibir novedades</label>
+            <label class="labels"><input type="radio" name="subscription" value="3">&nbsp;Cancelar todo</label>
+
+            <div class="button-group">
+                <input class="buttons" type="button" id="send" name="send" value="Enviar">
+                <input class="buttons" type="button" id="home" value="Volver a la página principal">
+            </div>
+        </div>
+        <br>
+        <p id="message" class="main-div" style="text-align: center; width: 60%;"></p>
+
+        <a href="https://api.whatsapp.com/send?phone=5491141995259" class="whatsapp" target="_blank">
+            <img src="./img/redes/whatsapp.svg" alt="Enviar mensaje por whatsapp">
+        </a>
+    </div>
+
+    <footer class="footer footer-text">
+        <div class="footer-redes">
+            <a href="http://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://YouTube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div>
+            <strong>Derechos reservados &copy; 2024 - Codo a Codo</strong>
+        </div>
+
+        <div class="footer-div-central">
+            <strong>Node.JS - Curso 24122 - Grupo 14</strong>
+        </div>
+    </footer>
+
+    <script async src="https://kit.fontawesome.com/0c98de083e.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/actualizarSuscripcion.js"></script>
+</body>
+</html>

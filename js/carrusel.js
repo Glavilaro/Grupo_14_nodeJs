@@ -3,7 +3,8 @@ let textos = [];
 
 document.addEventListener('DOMContentLoaded', function () 
 {
-    fetch('./data/promos.json')
+    //fetch('./data/promos.json')
+    fetch('https://grupo14.alwaysdata.net/promotions')
         .then(response => response.json())
         .then(data => mostrarPromos(data))
         .catch(error => console.error('Error al obtener los datos:', error));

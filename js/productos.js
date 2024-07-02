@@ -5,8 +5,10 @@
 document.addEventListener('DOMContentLoaded', function () 
 {
     const seccion = actualizarPagina();
-
-    fetch(`./data/${seccion}.json`)
+    const genero  = (seccion === 'mujeres' ? 'woman' : 'men');
+    
+    //fetch(`./data/${seccion}.json`)
+    fetch(`https://grupo14.alwaysdata.net/products/${genero}`)
         .then(response => response.json())
         .then(data => mostrarProductos(data))
         .catch(error => console.error('Error al obtener los datos:', error));

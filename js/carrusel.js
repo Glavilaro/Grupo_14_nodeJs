@@ -37,9 +37,11 @@ function addPromo(container, promo, idx, animate)
 
 function mostrarProximaPromo()
 {
-    textos[index].style.display = 'none';   // Oculto el texto actual
-    index = (index + 1) % textos.length;    // Obtengo el indice al proximo texto
-    textos[index].style.display = 'block';  // Muestro el proximo texto
+    if(textos.length > 0) {
+        textos[index].style.display = 'none';   // Oculto el texto actual
+        index = (index + 1) % textos.length;    // Obtengo el indice al proximo texto
+        textos[index].style.display = 'block';  // Muestro el proximo texto
+    }
 }
 
 setInterval

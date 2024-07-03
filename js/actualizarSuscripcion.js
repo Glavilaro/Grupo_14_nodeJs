@@ -61,6 +61,6 @@ function deleteSubscription() {
         body: `{"email": "${email}"}`
     })
     .then(response => response.json())
-    .then((response) => message.textContent = response.message )
+    .then((response) => message.innerHTML = response.message )
     .catch(error => message.textContent = error);
 }
